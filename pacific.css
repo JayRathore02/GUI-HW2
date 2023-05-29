@@ -25,7 +25,7 @@ header {
 	background-image: url("sunset.jpg"); /* Makes sure background of the header is an image */
 	background-repeat: no-repeat; /* Makes sure the image doesn't repeat if it doesn't fit */
 	background-position: left; /* Stretches the image to fill */
-	background-size: cover;
+	background-size: 100% 100%;
 	color: white;
 }
 
