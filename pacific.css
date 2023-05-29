@@ -1,0 +1,120 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+#wrapper {
+	background: linear-gradient( /* Splits background into two colors so it looks like the nav bar extends to the bottom when in reality it doesn't */
+		to right, /* Direction the color will be split, starts from left then to right */
+		rgb(183, 222, 236) 0px, /* Starting from the left until 180px (width of nav bar) the color is light blue for the background */
+		rgb(183, 222, 236) 180px,
+		white 180px, /* From 180px to the end of the content section */
+		white 100%
+	);
+}
+
+body {
+	background-image: url("ptrbackground.jpg"); /* Sets background to an image instead of a color */
+	color: gray; /* Makes text color gray */
+	font-family: Arial, Helvetica, sans-serif; 
+	min-width: 600px; /* Makes sure the minimum width the main box can be is 600px so that it can fit all necessary information */
+	width: 80%; /* The width of the main box should take up 80% of the page*/
+	margin: auto;  /* Centers the main box */
+}
+
+header {
+	background-image: url("sunset.jpg"); /* Makes sure background of the header is an image */
+	background-repeat: no-repeat; /* Makes sure the image doesn't repeat if it doesn't fit */
+	background-size: cover;
+	color: white;
+}
+
+/* Sets the width of the nav bar and made it float to the left and have fixed positioning so that the content section can be put to the left of it*/
+nav {
+	width: 180px;
+	float: left;
+	position: fixed;
+	background-color: rgb(183, 222, 236); /* Light blue color for the background*/
+}
+
+footer,
+#content {
+	margin-left: 225px; /* The content (aka Enjory Nature in Luxury half)  */
+	list-style-image: url("marker.gif"); /* Makes the bullet points images */
+	list-style-position: inside; /* Aligns bullet points with rest of text when it's wrapped around an image */
+}
+
+img {
+	float: left; /* Makes it so that text can be wrapped around image */
+	margin-right: 20px; /* Separates text to image by 20 px */
+	padding-bottom: 0px; 
+}
+
+/* this removes the bullet points on the list sents the font size and padding/margin of the elements*/
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+	padding: 20px;
+	margin-top: 0;
+}
+
+/* If a link is visited the color will change*/
+nav a:visited {
+	color: #344873;
+}
+
+/* hovering over*/
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* The links in the nav bar are bold, have no underline, and are the color navy */
+nav a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: navy;
+}
+
+/* Sets padding up, down, left, and right to 10px and makes the title of the box white */
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color: white;
+}
+
+/* Sets text color to light blue for the second header (Enjoy Nature in Luxury) */
+h2 {
+	color: #3399CC;
+}
+
+/* Sets font for both header 1 and 2 so that it's consistent among titled areas */
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* contant information is made 10% smaller than text above it and sets padding below so theres space between the copyright */
+#contact {
+	font-size: 90%;
+	padding-bottom: 50px;
+}
+
+/* Makes text of description terms black */
+dt {
+	color: #000033;
+}
+
+/* Sets the font family of the Copytright section and email, also makes the font smaller, italic, and adds padding below to add white space before the end of the main box */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: small;
+	padding-bottom: 20px;
+}
+
+/* Makes the class of resort (aka parts that say "Pacific Trails Resort") blue and bold */
+.resort {
+	color: #3385cc;
+	font-weight: bold;
+}
+
+
