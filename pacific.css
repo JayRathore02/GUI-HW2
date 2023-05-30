@@ -33,7 +33,6 @@ header {
 nav {
 	width: 180px;
 	float: left;
-	position: fixed;
 	background-color: rgb(183, 222, 236); /* Light blue color for the background*/
 }
 
