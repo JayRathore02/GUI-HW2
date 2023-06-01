@@ -19,13 +19,16 @@ body {
 	min-width: 600px; /* Makes sure the minimum width the main box can be is 600px so that it can fit all necessary information */
 	width: 80%; /* The width of the main box should take up 80% of the page*/
 	margin: auto;  /* Centers the main box */
+	background-color: rgb(31, 87, 154);
+	background-repeat: repeat-x; /* Repeats the image horizontally */
 }
 
 header {
 	background-image: url("sunset.jpg"); /* Makes sure background of the header is an image */
 	background-repeat: no-repeat; /* Makes sure the image doesn't repeat if it doesn't fit */
-	background-position: left; /* Stretches the image to fill */
-	background-size: 100% 100%;
+	background-position: right; /* Stretches the image to fill */
+	background-size: auto 100%;
+	background-color: rgb(0, 2, 48);
 	color: white;
 }
 
